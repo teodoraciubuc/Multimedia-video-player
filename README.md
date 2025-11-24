@@ -1,6 +1,6 @@
 # 🎬 Multimedia Video Player
 
-Un player multimedia simplu și modern, construit folosind **HTML, CSS și JavaScript**, care permite redarea unui playlist video, controlul volumului, navigarea prin clipuri și încărcarea subtitrărilor.
+Un player multimedia simplu și modern, construit folosind **HTML, CSS și JavaScript**, care permite redarea unui playlist video, controlul volumului, navigarea prin clipuri.
 
 ---
 
@@ -12,7 +12,6 @@ Un player multimedia simplu și modern, construit folosind **HTML, CSS și JavaS
 - 🔊 **Control volum + salvare volum în LocalStorage**
 - 💾 **Salvarea ultimului video redat (LocalStorage)**
 - 🗂️ **Playlist static cu mai multe clipuri**
-- 🎞️ **Încărcare subtitrări din fișiere JSON**
 - 📱 **UI simplu, responsive**
 
 ---
@@ -27,6 +26,7 @@ Multimedia-video-player/
 │ ├── film3.mp4
 │ └── film4.mp4
 │
+│
 ├── app.html
 ├── app.css
 ├── app.js
@@ -39,3 +39,5 @@ Multimedia-video-player/
 - **HTML5** — structură pagină & element video
 - **CSS3** — stilizare interfață & layout
 - **JavaScript ES6** — logica playerului, evenimente, LocalStorage
+
+---
