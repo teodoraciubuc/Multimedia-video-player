@@ -433,9 +433,7 @@ canvas.addEventListener("mouseleave", () => {
   hoverOnProgress = false;
 });
 
-/**********************
- * 14. DRAG & DROP    *
- **********************/
+/* 14. DRAG & DROP */
 fileInput.addEventListener("change", (e) => {
   addFiles(e.target.files);
   fileInput.value = "";
@@ -456,9 +454,7 @@ dropZone.addEventListener("drop", (e) => {
   addFiles(e.dataTransfer.files);
 });
 
-/**********************
- * 15. WEB STORAGE    *
- **********************/
+/* 15. WEB STORAGE */
 function saveVolume() {
   localStorage.setItem(STORAGE_KEYS.VOLUME, video.volume.toString());
 }
