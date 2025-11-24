@@ -16,24 +16,6 @@ Un player multimedia simplu și modern, construit folosind **HTML, CSS și JavaS
 
 ---
 
-## 📁 Structura proiectului
-
-Multimedia-video-player/
-│
-├── media/
-│ ├── film1.mp4
-│ ├── film2.mp4
-│ ├── film3.mp4
-│ └── film4.mp4
-│
-│
-├── app.html
-├── app.css
-├── app.js
-└── README.md
-
----
-
 ## 🛠️ Tehnologii folosite
 
 - **HTML5** — structură pagină & element video
