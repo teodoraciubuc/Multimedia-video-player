@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b1020;
+    color: #f5f5f5;
+}
+
+.app {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; 
+}
+
+
+.sidebar {
+    background: #141829;
+    border-right: 1px solid #20263a;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #8ab4f8;
+}
+
+.info {
+    font-size: 11px;
+    color: #9fa7c8;
+}
+
+#playlist {
+    margin-top: 12px;
+    padding: 0;
+    list-style: none;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.playlist-item {
+    padding: 8px 6px;
+    margin-bottom: 6px;
+    background: #1a2136;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.playlist-item:hover {
+    background: #222b45;
+}
+
+.playlist-item.active {
+    background: #273557;
+    border: 1px solid #8ab4f8;
+}
+
+.playlist-title {
+    flex: 1;
+    font-size: 13px;
+    margin-right: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.playlist-actions {
+    display: flex;
+    gap: 3px;
+}
+
+.playlist-btn {
+    border: none;
+    padding: 2px 5px;
+    font-size: 11px;
+    border-radius: 4px;
+    background: #2c3857;
+    color: #f5f5f5;
+    cursor: pointer;
+}
+
+.playlist-btn:hover {
+    background: #3a4a72;
+}
+
+.add-controls {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 12px;
+}
+
+.file-input-label {
+    padding: 6px;
+    border-radius: 4px;
+    background: #1f283d;
+    border: 1px dashed #3e4a6a;
+    cursor: pointer;
+    text-align: center;
+}
+
+.file-input-label input {
+    display: none;
+}
+
+#dropZone {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px dashed #3e4a6a;
+    text-align: center;
+    background: #141a2a;
+    color: #b0b8d8;
+}
+
+#dropZone.dragover {
+    border-color: #8ab4f8;
+    background: #1d2742;
+}
+
+.player-area {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#videoCanvas {
+    display: block;
+    margin: 0 auto;
+    background: black;
+    border-radius: 8px;
+}
+
+.controls-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+}
+
+#effectSelect {
+    background: #141829;
+    color: #f5f5f5;
+    border-radius: 4px;
+    border: 1px solid #3e4a6a;
+    padding: 4px 6px;
+}
+
+.subtitle-container {
+    min-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff9c4;
+    text-shadow: 0 0 3px black, 0 0 8px black;
+}

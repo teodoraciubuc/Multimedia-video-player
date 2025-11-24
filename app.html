@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="UTF-8">
+        <title>Player Multimedia</title>
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+
+    <div class="app">
+        <div class="sidebar">
+            <div>
+                <h2>Playlist filme</h2>
+                <p class="info">Click pe film pentru a-l reda.</p>
+                <p class="info"> Folosește ▲/▼/✖ ca să muți sau să ștergi.</p>
+            </div>
+
+            <ul id="playlist"></ul>
+
+            <div class="add-controls">
+                <label class="file-input-label">
+                    Adaugă video (input)
+                    <input type="file" id="fileInput" accept="video/*" multiple>
+                </label>
+
+                <div id="dropZone">
+                    Drag & drop fișiere video aici
+                </div>
+            </div>
+        </div>
+
+        <div class="player-area">
+            <canvas id="videoCanvas" width="960" height="540"></canvas>
+
+            <div class="controls-row">
+                <label for="effectSelect">Efect video:</label>
+
+                <select id="effectSelect">
+                    <option value="none">Fără efect</option>
+                    <option value="red">Ecran roșu</option>
+                    <option value="invert">Invert</option>
+                    <option value="posterize">Posterizare</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <video id="videoElement" crossorigin="anonymous" style="display:none;"></video>
+    <video id="previewVideo" crossorigin="anonymous" style="display:none;"></video>
+
+    <script src="app.js"></script>
+    </body>
+</html>
